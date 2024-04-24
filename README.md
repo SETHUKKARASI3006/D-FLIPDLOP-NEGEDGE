@@ -1,16 +1,16 @@
 # D-FLIPDLOP-NEGEDGE
 
-**AIM:**
+## AIM:
 
 To implement  D flipflop using verilog and validating their functionality using their functional tables
 
-**SOFTWARE REQUIRED:**
+## SOFTWARE REQUIRED:
 
 Quartus prime
 
-**THEORY**
+## THEORY:
 
-**D Flip-Flop**
+### D Flip-Flop:
 
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
 
@@ -26,19 +26,46 @@ Therefore, D flip-flop always Hold the information, which is available on data i
 
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
-**Procedure**
+## Procedure:
 
-/* write all the steps invloved */
+### STEP !:
+Type the program in quartus software.
 
-**PROGRAM**
+### STEP 2:
+Compile and run the program.
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+### STEP 3:
+Generate the RTL schematic and save the logic diagram.
 
-**RTL LOGIC FOR FLIPFLOPS**
+### STEP 4:
+Create nodes for inputs and outputs to generate the timing diagram.
 
+### STEP 5:
+For different input combinations generate the timing diagram.
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
+## PROGRAM:
 
+/* Program for flipflops and verify its truth table in quartus using Verilog programming.<br>
+Developed by:SETHUKKARASI C<br>
+RegisterNumber:212223230201 */
 
-**RESULTS**
+```
+module DFLIPFLOPNEGEDGE(D,Clock,reset,Q);
+input D,reset,Clock;
+output reg Q;
+always @ (negedge Clock)// use negative edge clock for triggereing condition 
+if (!reset)//compute D flipflop logic here
+	Q <= 0;
+else 
+	Q <= D;
+ endmodule
+```
+
+## RTL LOGIC FOR FLIPFLOPS:
+![rtl](image2.png)
+
+## TIMING DIGRAMS FOR FLIP FLOPS:
+[output](README.md)
+
+## RESULTS:
+Therefore, a program for flipflops is developed and it's truthtable is verified in quartus using verilog programming.
