@@ -28,7 +28,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 ## Procedure:
 
-### STEP !:
+### STEP 1:
 Type the program in quartus software.
 
 ### STEP 2:
@@ -65,7 +65,7 @@ else
 ![rtl](image2.png)
 
 ## TIMING DIGRAMS FOR FLIP FLOPS:
-[output](README.md)
+![output](image.png)
 
 ## RESULTS:
 Therefore, a program for flipflops is developed and it's truthtable is verified in quartus using verilog programming.
